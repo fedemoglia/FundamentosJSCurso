@@ -66,3 +66,13 @@ function permitirAcceso(persona) {
     console.log('ACCESO DENEGADO')
   }
 }
+
+const esMenorDeEdad = (persona) => !esMayorDeEdad(persona)
+
+const imprimirSiEsMenorDeEdad = (persona) => {
+  if (esMenorDeEdad(persona)) {
+    console.log(`${persona.nombre} es menor de edad`)
+  } else {
+    console.log(`${persona.nombre} es mayor de edad`)
+  }
+}
